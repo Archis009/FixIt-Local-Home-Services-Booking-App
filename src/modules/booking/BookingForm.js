@@ -8,3 +8,12 @@ export default function BookingForm({ route, navigation }) {
   const [slot, setSlot] = useState("Morning");
   const [notes, setNotes] = useState("");
 } 
+
+  const slots = ["Morning", "Afternoon", "Evening"];
+
+  const saveBooking = async () => {
+    if (!date) {
+      Alert.alert("Error", "Please select a date");
+      return;
+    }
+  }
